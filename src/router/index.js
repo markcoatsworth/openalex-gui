@@ -16,6 +16,7 @@ import AboutPage from '@/views/About.vue';
 import OurStats from '@/views/OurStats.vue';
 import TestimonialsPage from "@/views/Testimonials.vue";
 import WorksCitingOpenAlex from "@/views/WorksCitingOpenAlex.vue";
+import AiRankingsPage from "@/views/AiRankings.vue";
 import TeamPage from "@/views/Team.vue";
 import TransparencyPage from "@/views/Transparency.vue";
 import LegalPage from "@/views/Legal.vue";
@@ -314,6 +315,7 @@ const routes = [
     {path: '/users', redirect: {name: "testimonials"}},
     {path: '/testimonials', name: "testimonials", component: TestimonialsPage},
     {path: '/works-citing-openalex', name: "works-citing-openalex", component: WorksCitingOpenAlex},
+    {path: '/ai-rankings', name: 'AiRankings', component: AiRankingsPage},
     {path: '/stats', component: OurStats},
     {path: '/events/funders2026', name: 'Funders2026', component: Funders2026Page},
 

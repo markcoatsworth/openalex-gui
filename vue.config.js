@@ -4,6 +4,12 @@ const webpack = require('webpack');
 
 module.exports = {
   lintOnSave: false,
+  devServer: {
+    host: '0.0.0.0',
+    client: {
+      webSocketURL: 'auto://0.0.0.0:0/ws',
+    },
+  },
   transpileDependencies: [
     'vuetify'
   ],
